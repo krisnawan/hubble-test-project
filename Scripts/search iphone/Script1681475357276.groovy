@@ -16,6 +16,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement as WebElement
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import com.kms.katalon.core.testobject.ConditionType
+
+public class TestObjectHelper {
+	public static TestObject getTestObjectWithXpath(String xpath) {
+		return new TestObject().addProperty('xpath', ConditionType.EQUALS, xpath)
+	}
+}
 
 WebUI.openBrowser('')
 
@@ -49,13 +58,116 @@ WebUI.click(findTestObject('Object Repository/Page_Jual iphone 14 pro  Tokopedia
 
 WebUI.click(findTestObject('Object Repository/Page_Jual iphone 14 pro  Tokopedia/p_Harga Terendah'))
 
-WebUI.navigateToUrl('https://www.tokopedia.com/')
-
 WebUI.delay(2)
 
-WebUI.rightClick(findTestObject('Object Repository/Page_Situs Jual Beli Online Terlengkap, Mud_c2d1e5/input_Kategori_css-3017qm exxxdg63'))
+WebUI.scrollToPosition(0, 400)
 
-WebUI.rightClick(findTestObject('Object Repository/Page_Situs Jual Beli Online Terlengkap, Mud_c2d1e5/input_Kategori_css-3017qm exxxdg63'))
+for (int i = 1; i <= 15 ; i++){
+	
+	WebUI.getText(TestObjectHelper.getTestObjectWithXpath('(//*[@data-testid="spnSRPProdName"])['+i+']'))
+	
+}
+
+WebUI.scrollToPosition(0, 800)
+
+for (int i = 16; i <= 30 ; i++){
+	
+	WebUI.getText(TestObjectHelper.getTestObjectWithXpath('(//*[@data-testid="spnSRPProdName"])['+i+']'))
+	
+}
+
+WebUI.scrollToPosition(0, 1200)
+
+for (int i = 31; i <= 45 ; i++){
+	
+	WebUI.getText(TestObjectHelper.getTestObjectWithXpath('(//*[@data-testid="spnSRPProdName"])['+i+']'))
+	
+}
+
+WebUI.scrollToPosition(0, 1600)
+
+for (int i = 46; i <= 60 ; i++){
+	
+	WebUI.getText(TestObjectHelper.getTestObjectWithXpath('(//*[@data-testid="spnSRPProdName"])['+i+']'))
+	
+}
+
+WebUI.scrollToElement(findTestObject('Page_Jual iphone 14 pro  Tokopedia/btnNextObject'), 0)
+
+WebUI.waitForElementPresent(findTestObject('Page_Jual iphone 14 pro  Tokopedia/btnNextObject'), 10)
+
+WebUI.click(findTestObject('Page_Jual iphone 14 pro  Tokopedia/btnNextObject'))
+
+WebUI.waitForElementPresent(findTestObject('Page_Jual iphone 14 pro  Tokopedia/itemCatalog'), 10)
+
+WebUI.scrollToPosition(0, 300)
+
+for (int i = 1; i <= 15 ; i++){
+	
+	WebUI.getText(TestObjectHelper.getTestObjectWithXpath('(//*[@data-testid="spnSRPProdName"])['+i+']'))
+	
+}
+
+WebUI.scrollToPosition(0, 600)
+
+for (int i = 16; i <= 30 ; i++){
+	
+	WebUI.getText(TestObjectHelper.getTestObjectWithXpath('(//*[@data-testid="spnSRPProdName"])['+i+']'))
+	
+}
+
+WebUI.scrollToPosition(0, 900)
+
+for (int i = 31; i <= 45 ; i++){
+	
+	WebUI.getText(TestObjectHelper.getTestObjectWithXpath('(//*[@data-testid="spnSRPProdName"])['+i+']'))
+	
+}
+
+WebUI.scrollToPosition(0, 1200)
+
+for (int i = 46; i <= 60 ; i++){
+	
+	WebUI.getText(TestObjectHelper.getTestObjectWithXpath('(//*[@data-testid="spnSRPProdName"])['+i+']'))
+	
+}
+
+WebUI.scrollToElement(findTestObject('Page_Jual iphone 14 pro  Tokopedia/btnNextObject'), 0)
+
+WebUI.click(findTestObject('Page_Jual iphone 14 pro  Tokopedia/btnNextObject'))
+
+WebUI.waitForElementPresent(findTestObject('Page_Jual iphone 14 pro  Tokopedia/itemCatalog'), 10)
+
+WebUI.scrollToPosition(0, 300)
+
+for (int i = 1; i <= 15 ; i++){
+	
+	WebUI.getText(TestObjectHelper.getTestObjectWithXpath('(//*[@data-testid="spnSRPProdName"])['+i+']'))
+	
+}
+
+WebUI.scrollToPosition(0, 600)
+
+for (int i = 16; i <= 30 ; i++){
+	
+	WebUI.getText(TestObjectHelper.getTestObjectWithXpath('(//*[@data-testid="spnSRPProdName"])['+i+']'))
+	
+}
+
+WebUI.scrollToPosition(0, 900)
+
+for (int i = 31; i <= 45 ; i++){
+	
+	WebUI.getText(TestObjectHelper.getTestObjectWithXpath('(//*[@data-testid="spnSRPProdName"])['+i+']'))
+	
+}
+
+WebUI.scrollToPosition(0, 1200)
+
+for (int i = 46; i <= 60 ; i++){
+	
+	WebUI.getText(TestObjectHelper.getTestObjectWithXpath('(//*[@data-testid="spnSRPProdName"])['+i+']'))
+	
+}
 
 WebUI.closeBrowser()
-
