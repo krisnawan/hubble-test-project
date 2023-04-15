@@ -68,7 +68,7 @@ for (int i = 1; i <= 15 ; i++){
 	
 }
 
-WebUI.scrollToPosition(0, 800)
+WebUI.scrollToPosition(0, 1200)
 
 for (int i = 16; i <= 30 ; i++){
 	
@@ -76,7 +76,7 @@ for (int i = 16; i <= 30 ; i++){
 	
 }
 
-WebUI.scrollToPosition(0, 1200)
+WebUI.scrollToPosition(0, 1600)
 
 for (int i = 31; i <= 45 ; i++){
 	
@@ -84,7 +84,7 @@ for (int i = 31; i <= 45 ; i++){
 	
 }
 
-WebUI.scrollToPosition(0, 1600)
+WebUI.scrollToPosition(0, 2000)
 
 for (int i = 46; i <= 60 ; i++){
 	
@@ -92,7 +92,9 @@ for (int i = 46; i <= 60 ; i++){
 	
 }
 
-WebUI.scrollToElement(findTestObject('Page_Jual iphone 14 pro  Tokopedia/btnNextObject'), 0)
+WebUI.scrollToPosition(0, 4000)
+
+//WebUI.scrollToElement(findTestObject('Page_Jual iphone 14 pro  Tokopedia/btnNextObject'), 0)
 
 WebUI.waitForElementPresent(findTestObject('Page_Jual iphone 14 pro  Tokopedia/btnNextObject'), 10)
 
